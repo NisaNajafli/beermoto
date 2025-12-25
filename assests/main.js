@@ -56,3 +56,53 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".advantages__card");
+
+  cards.forEach((card, index) => {
+    const num = document.createElement("span");
+    num.className = "advantages__num";
+    num.textContent = index + 1;
+    card.prepend(num);
+  });
+});
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 200) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+document.addEventListener("DOMContentLoaded", () => {
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const header = item.querySelector(".faq-header");
+
+  header.addEventListener("click", () => {
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    } else {
+      faqItems.forEach((i) => i.classList.remove("active"));
+      item.classList.add("active");
+    }
+  });
+});
+});
+ document.addEventListener('DOMContentLoaded', function () {
+  new Swiper('.reviews-swiper', {
+  loop: true, 
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: { delay: 3000, disableOnInteraction: false },
+  pagination: { el: '.swiper-pagination', clickable: true },
+  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  breakpoints: {
+     0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 }
+  }
+});
+});
