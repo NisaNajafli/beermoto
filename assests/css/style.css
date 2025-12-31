@@ -12,6 +12,9 @@
 * {
   font-family: "TahomaCustom", Arial, sans-serif !important;
 }
+body{
+  background-color: #16171a
+}
 html{
   scroll-behavior: smooth;
 }
@@ -172,7 +175,7 @@ section{
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
-    
+    color: #fff
 }
 .container{
     max-width: 1400px;
@@ -205,7 +208,7 @@ nav{
     gap: 20px;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #333;
 }
 .logo__img{
     width: 200px;
@@ -403,7 +406,7 @@ nav svg{
      position: relative;
 }
 #about .section__title{
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #fff;
     padding-bottom: 40px;
 }
 .about__texts{
@@ -413,7 +416,7 @@ nav svg{
 .about__texts p{
     line-height: 24px;
     font-size: 16px;
-    color: #000000
+    color: #fff
 }
 .second__button{
     background: var(--blue);
@@ -912,7 +915,7 @@ nav svg{
 }
 
 .contact-card.dark {
-  background: linear-gradient(135deg, #1a1a1a, #000);
+  background: linear-gradient(135deg, #333, #000000cc);
 }
 
 .contact-card.green {
