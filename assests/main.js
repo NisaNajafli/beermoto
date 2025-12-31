@@ -56,6 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  if (window.scrollY > 150) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".advantages__card");
 

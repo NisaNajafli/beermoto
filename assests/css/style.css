@@ -37,9 +37,15 @@ header{
     width: 100%;
     margin: auto;
     z-index: 2;
+    transition: all 300ms ease;
 }
 header.scrolled{
-        box-shadow: 10px -6px 15px black;
+     position: fixed;
+    box-shadow: 10px -6px 15px black;
+    transition: all 0.4s ease;
+    animation: smoothScroll 1s;
+    border-top: none;
+    z-index: 222;
 }
 nav{
     display: flex;
@@ -157,17 +163,17 @@ nav svg{
 }
 
 .hero__controls {
-  position: absolute;
-  left: 40px;
-  bottom: 40px;
-  display: flex;
-  align-items: center;
-  z-index: 5;
-  color: #fff;
-  background-color: black;
-  width: 100px;
-  border-radius: 5px;
-  padding: 8px 0;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    color: #fff;
+    background-color: black;
+    width: 157px;
+    border-radius: 5px;
+    padding: 20px 0px;
 }
 
 .hero__arrow {
@@ -179,7 +185,7 @@ nav svg{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
+    max-width: 60%;
     padding-left: 40px;
     color: #fff;
     position: relative;
@@ -192,18 +198,19 @@ nav svg{
 }
 .hero__content p{
     font-size: 20px;
+    line-height: 25px;
 }
 .main__button{
     background-color: #fff;
     color: #333;
     width: max-content;
-    padding: 10px 70px;
-    font-size: 15px;
+    padding: 15px 70px;
+    font-size: 16px;
     font-weight: bold;
 }
 .hero__arrow svg {
-  width: 13px;
-  height: 13px;
+  width: 23px;
+  height: 23px;
   opacity: .7;
   transition: .3 ease;
 }
@@ -214,8 +221,8 @@ nav svg{
     transform: rotate(-180deg);
 }
 .hero__counter {
-  font-size: 12px;
-  min-width: 48px;
+  font-size: 20px;
+  min-width: 80px;
   text-align: center;
 }
 
@@ -268,6 +275,7 @@ nav svg{
     text-align: center;
     color: #fff;
     width: fit-content;
+    letter-spacing: 1px;
 }
 .second__button:hover{
     background: #0066b1c7
@@ -469,7 +477,7 @@ nav svg{
   align-items: center;
   padding: 18px 24px;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 8px;
   background: #f6f6f6;
 }
 
