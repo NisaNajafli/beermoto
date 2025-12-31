@@ -12,6 +12,17 @@
 * {
   font-family: "TahomaCustom", Arial, sans-serif !important;
 }
+html{
+  scroll-behavior: smooth;
+}
+ #about,
+  #reviews,
+  #advantages,
+  #contact,
+  #faq,
+  #services{
+      scroll-margin-top: 200px; 
+  }
 .btn-open-modal {
   padding: 12px 26px;
   border: 1px solid #333;
